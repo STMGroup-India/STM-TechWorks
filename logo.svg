@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160" viewBox="0 0 600 160">
+  <rect width="600" height="160" fill="white"/>
+  <!-- The </ icon - two angled lines forming the code bracket -->
+  <!-- Left angle bracket < -->
+  <line x1="75" y1="30" x2="30" y2="75" stroke="#2563eb" stroke-width="12" stroke-linecap="round"/>
+  <line x1="30" y1="75" x2="75" y2="120" stroke="#2563eb" stroke-width="12" stroke-linecap="round"/>
+  <!-- Forward slash / -->
+  <line x1="95" y1="25" x2="65" y2="125" stroke="#2563eb" stroke-width="12" stroke-linecap="round"/>
+  <!-- STM TechWorks - large bold dark text -->
+  <text x="140" y="88" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="800" fill="#0a0a1a">STM TechWorks</text>
+  <!-- A Division of STM Group - smaller muted text -->
+  <text x="142" y="118" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="400" letter-spacing="0.5" fill="#4a4a6a">A Division of STM Group</text>
+</svg>

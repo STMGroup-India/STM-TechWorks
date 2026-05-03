@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STM TechWorks Logo Export</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .logo-container {
+      background: white;
+      padding: 60px 80px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      flex-shrink: 0;
+      width: 72px;
+      height: 72px;
+    }
+
+    .logo-text {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #0a0a1a;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-division {
+      display: block;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #4a4a6a;
+      letter-spacing: 0.02em;
+      margin-top: 4px;
+    }
+
+    .instructions {
+      margin-top: 40px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .instructions strong {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container" id="logo">
+    <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36">
+          <stop offset="0%" stop-color="#2563eb"/>
+          <stop offset="100%" stop-color="#0891b2"/>
+        </linearGradient>
+      </defs>
+      <text x="4" y="28" font-family="monospace" font-size="28" font-weight="bold" fill="url(#logoGrad)">&lt;/&gt;</text>
+    </svg>
+    <span class="logo-text">STM TechWorks<span class="logo-division">A Division of STM Group</span></span>
+  </div>
+
+  <div class="instructions">
+    <p><strong>To save as PNG:</strong></p>
+    <p>Right-click the logo above → "Take Screenshot" (Firefox)<br>
+    or use <strong>Cmd + Shift + 4</strong> on Mac to screenshot just the logo area.</p>
+  </div>
+</body>
+</html>

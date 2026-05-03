@@ -473,7 +473,19 @@ ul { list-style: none; }
   gap: 48px;
   padding: 48px;
   margin-bottom: 32px;
-  align-items: center;
+  align-items: stretch;
+}
+
+.project-mockup-link {
+  display: flex;
+  text-decoration: none;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .project-mockup-link {
+    height: auto;
+  }
 }
 
 .project-badge {
@@ -531,16 +543,30 @@ ul { list-style: none; }
 .project-visual {
   display: flex;
   justify-content: center;
+  align-items: stretch;
 }
 
 .project-mockup {
   width: 100%;
-  max-width: 420px;
   border-radius: 16px;
   background: rgba(0, 0, 0, 0.02);
   border: 1px solid var(--border);
   overflow: hidden;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-mockup .mockup-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-mockup .mockup-body img {
+  flex: 1;
+  object-fit: cover;
+  object-position: top;
 }
 
 .mockup-header {
@@ -731,7 +757,7 @@ ul { list-style: none; }
 /* ===== PROCESS ===== */
 .process-timeline {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
   position: relative;
 }
@@ -1099,10 +1125,15 @@ ul { list-style: none; }
   .project-card {
     grid-template-columns: 1fr;
     padding: 36px;
+    align-items: start;
   }
 
   .project-visual {
     order: -1;
+  }
+
+  .project-mockup .mockup-body img {
+    max-height: 300px;
   }
 
   .about-content {
@@ -1208,6 +1239,10 @@ ul { list-style: none; }
 
   .project-card {
     padding: 24px;
+  }
+
+  .project-mockup .mockup-body img {
+    max-height: 220px;
   }
 
   .service-card,
